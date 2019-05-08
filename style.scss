@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Pacifico', cursive;
+}
+
+$background_color_button: rgba(91, 143, 75, 0.596);
+$background_color_modal: rgba(15, 13, 13, 0.8);
+$background_color_modal_content: #f1f7ee;
+$symbol_close_hover_color: rgb(34, 190, 13);
+
+
+#btn1{
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 15%;
+    background-color: $background_color_button;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+    background-color: $background_color_modal;
+
+    .modal-content {
+        background-color: $background_color_modal_content;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        border-radius: 15%;
+        width: 80%;
+
+        .close {
+            color: $background_color_modal;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+
+            &:hover{
+                color: $symbol_close_hover_color;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            &:focus {
+                color: $symbol_close_hover_color;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
